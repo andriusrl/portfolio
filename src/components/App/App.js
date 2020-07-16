@@ -1,26 +1,50 @@
 import React from 'react';
 import {
+  Main,
   TopBioContainer,
-  Name,
+  Title,
+  TopBioContainerLeft,
   WrapperBioContainer,
+  ContentBio,
   Photo,
   Menu,
   SocialNetworksWrapper,
-  SocialNetwrokIcon
+  SocialNetwrokIcon,
 } from '../../style/style';
 
 function App() {
   return (
-    <div>
+    <Main>
       <WrapperBioContainer>
-        <TopBioContainer>
-          <Name>
-            Andrius
-          </Name>
-          {/* Eu sou Andrius Lazarino
-          Desenvolvedor Web Full Stack
-          Apaixonado por programação e tecnologia */}
-        </TopBioContainer>
+        <TopBioContainerLeft>
+          <Title>
+            Portfólio
+          </Title>
+          <ContentBio>
+            <h1>
+              Eu sou
+          </h1>
+            <h1>
+              Andrius Lazarino
+          </h1>
+            <h2>
+              Desenvolvedor Web Full Stack
+          </h2>
+            <h3>
+              Apaixonado por programação e tecnologia
+          </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la
+              bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
+              t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore eu fugiat nulla pariatur.
+           </p>
+           <p>
+             JavaScript | React | Node | MySQL | HTML | CSS
+           </p>
+           <button>CV em PDF</button>
+          </ContentBio>
+        </TopBioContainerLeft>
         <TopBioContainer>
           <Photo src={require("../../images/andrius.png")} />
           <Menu>quem sou | projetos | contato</Menu>
@@ -33,7 +57,7 @@ function App() {
         </TopBioContainer>
       </WrapperBioContainer>
       Portfolio
-    </div>
+    </Main>
   );
 }
 
