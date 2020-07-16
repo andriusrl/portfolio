@@ -1,11 +1,34 @@
 import styled from 'styled-components'
 
+export const Main = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12px;
+`
+
 export const TopBioContainer = styled.div`
       width: 564px;
       height: 621px;
       background-color: #011726;
       display: flex;
       justify-content: right;
+      margin-left: 6px;
+`
+export const TopBioContainerLeft = styled.div`
+    width: 564px;
+    height: 621px;
+    background-color: #011726;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    margin-right: 6px;
+`
+export const ContentBio = styled.div`
+    width: 369px;
+    align-self: center;
+    margin-top: auto;
+    margin-bottom: auto;
 `
 
 export const WrapperBioContainer = styled.div`
@@ -14,16 +37,14 @@ export const WrapperBioContainer = styled.div`
 
 export const Menu = styled.div`
     position: absolute;
-    margin: 3% 6% 0 0;
+    margin: 23px 53px 0 0;
     color: #ffffff;
     z-index: 1;
 
 `
-export const Name = styled.div`
-    /* justify-self: l; */
-    /* margin: 3% 0 0 0; */
-    margin-right: auto;
-    color: #ffffff;
+export const Title = styled.div`
+    margin: 23px auto 0 29px;
+    font-weight: bold;
 `
 
 export const Photo = styled.img`
@@ -36,7 +57,7 @@ export const Photo = styled.img`
 export const SocialNetworksWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    margin: auto 16% auto 0;
+    margin: auto 53px auto 0;
     z-index: 1;
 `
 
