@@ -10,6 +10,11 @@ import {
   Menu,
   SocialNetworksWrapper,
   SocialNetwrokIcon,
+  WrapperSkills,
+  PhotoBottom,
+  TitleSkills,
+  SkillsContent,
+  SkillItem,
 } from '../../style/style';
 
 function App() {
@@ -38,11 +43,11 @@ function App() {
               bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
               t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
               dolore eu fugiat nulla pariatur.
+          </p>
+            <p>
+              JavaScript | React | Node | MySQL | HTML | CSS
            </p>
-           <p>
-             JavaScript | React | Node | MySQL | HTML | CSS
-           </p>
-           <button>CV em PDF</button>
+            <button>CV em PDF</button>
           </ContentBio>
         </TopBioContainerLeft>
         <TopBioContainer>
@@ -56,6 +61,39 @@ function App() {
           </SocialNetworksWrapper>
         </TopBioContainer>
       </WrapperBioContainer>
+      <WrapperSkills>
+        <PhotoBottom src={require("../../images/andrius_bottom.png")} />
+        <TitleSkills>Meus conhecimentos</TitleSkills>
+        <SkillsContent>
+          <SkillItem>
+            <h1>
+              Front-end
+           </h1>
+            <p>
+              Desenvolvimento de aplicações
+              web utilizando HTML, CSS e
+              JavaScript.
+           </p>
+            <p>
+              Criação de sites responsivos
+              seguindo princípio de
+              Mobile First.
+            </p>
+          </SkillItem>
+          <SkillItem>
+            <h1>
+              Back-end
+           </h1>
+            <p>
+            Aplicações utilizando NodeJS,
+Typescript e MySQL.
+           </p>
+            <p>
+            Criação de API´s para comunicação com front-end seguindo arquitetura MVC.
+            </p>
+          </SkillItem>
+        </SkillsContent>
+      </WrapperSkills>
       Portfolio
     </Main>
   );

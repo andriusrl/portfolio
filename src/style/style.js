@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 
 export const Main = styled.div`
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 12px;
+    padding-top: 12px;
 `
 
 export const TopBioContainer = styled.div`
@@ -64,4 +66,34 @@ export const SocialNetworksWrapper = styled.div`
 export const SocialNetwrokIcon = styled.img`
     margin: 16%;
     width: 39px;
+`
+
+export const WrapperSkills = styled.div`
+    width: 1140px;
+    background-color: #1b818c;
+    margin-top: 12px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+`
+export const PhotoBottom = styled.img`
+    position: absolute;
+    align-self: end;
+    opacity: 0.6;
+`
+export const SkillsContent = styled.div`
+    margin: 69px 0 0 79px;
+    display: flex;
+`
+export const SkillItem = styled.div`
+    text-align: center;
+    p{
+        text-align: justify;
+        padding: 0 9% 0 9%;
+    }
+`
+
+export const TitleSkills = styled.h1`
+    margin: 79px 0 0 79px;
+    font-weight: bold;
 `
