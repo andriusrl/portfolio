@@ -110,6 +110,7 @@ export const EducationItem = styled.div`
 `
 export const WrapperEducation = styled.div`
     margin-top:12px;
+    margin-bottom:12px;
     width: 1140px;
     display: flex;
     color: #ffffff;
@@ -132,4 +133,33 @@ export const EducationTitle = styled.h1`
         width: 364px;
         margin-top: 19px !important;
         align-self: flex-start;
+`
+export const ProjectItem = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+`
+export const WrapperProjects = styled.div`
+    width: 1140px;
+    ${ProjectItem}:nth-child(1){
+        background-color: #011726;
+    };
+    ${ProjectItem}:nth-child(2){
+        background-color: #1b818c;
+    };
+    ${ProjectItem}:nth-child(3){
+        background-color: #025e73;
+    };
+`
+export const PhotoProject = styled.img`
+    width: 499px;
+    height: 303px;
+    margin-top: auto;
+    margin-bottom: auto;
+`
+export const ProjectContent = styled.div`
+    width: 420px;
+    color: #ffffff;
+    margin-top: 3%;
+    margin-bottom: 3%;
 `
