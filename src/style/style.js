@@ -13,7 +13,7 @@ export const TopBioContainer = styled.div`
       height: 621px;
       background-color: #011726;
       display: flex;
-      justify-content: right;
+      justify-content: flex-end;
       margin-left: 6px;
 `
 export const TopBioContainerLeft = styled.div`
@@ -33,13 +33,16 @@ export const ContentBio = styled.div`
 `
 export const WrapperBioContainer = styled.div`
     display: flex;
+
 `
 
 export const Menu = styled.div`
     position: absolute;
-    margin: 23px 53px 0 0;
+    margin: 23px 0 0 0;
     color: #ffffff;
     z-index: 1;
+    padding-right: 53px;
+    /* align-self: flex-end; */
 
 `
 export const Title = styled.div`
