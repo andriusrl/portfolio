@@ -26,7 +26,7 @@ export const TopBioContainerLeft = styled.div`
     margin-right: 6px;
 `
 export const ContentBio = styled.div`
-    width: 369px;
+    width: 371px;
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;
@@ -74,7 +74,7 @@ export const WrapperSkills = styled.div`
 `
 export const PhotoBottom = styled.img`
     position: absolute;
-    align-self: end;
+    align-self: flex-end;
     opacity: 0.6;
 `
 export const SkillsContent = styled.div`

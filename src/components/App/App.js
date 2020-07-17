@@ -53,10 +53,8 @@ function App() {
               Apaixonado por programação e tecnologia
           </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la
-              bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
-              t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.
+            A princípio gostava de editar código de servidores de jogos online depois passei a tentar fazer pequenos jogos apenas por curiosidade e acabei conhecendo outras linguagens que tive um pequeno contato como C, C++, C#, java, mas foi o desenvolvimento web que mais me chamou atenção pela quantidade tecnologias e pessoas envolvidas.
+Atualmente estou cursando o 6° semestre de engenharia de software e também finalizando outro curso fullstack de desenvolvimento web onde participei de diversos trabalhos em equipe.
           </p>
             <p>
               JavaScript | React | Node | MySQL | HTML | CSS
