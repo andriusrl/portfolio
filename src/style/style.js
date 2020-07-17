@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const Main = styled.div`
     font-family: 'Roboto', sans-serif;
@@ -162,4 +162,72 @@ export const ProjectContent = styled.div`
     color: #ffffff;
     margin-top: 3%;
     margin-bottom: 3%;
+`
+export const ProjectTitle = styled.h2`
+    color: #00436c;
+    margin: 0;
+    margin-bottom: 12px;
+`
+export const WrapperContact = styled.div`
+    background-color: #1b818c;
+    margin-top:12px;
+    width: 1140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
+export const ImageEmail = styled.img`
+    width: 193px;
+    height: 193px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 66px;
+`
+export const ContactContent = styled.div`
+    margin-top: 2%;
+    width: 563px;
+    color: #ffffff;
+    display: flex;
+    div{
+        width: 430px;
+        text-align: justify;
+    };
+`
+export const SocialNetworksContactWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+`
+const increasesSize = keyframes`
+    0% {
+        width: 49px;
+    }
+    50% {
+        width: 59px;
+    }
+    100% {
+        width: 69px;
+    }
+`
+export const SocialNetwrokContactIcon = styled.img`
+    width: 39px;
+    margin: 2%;
+        :hover{
+            animation: ${increasesSize} 0.3s 0s both;
+        }
+        
+`
+export const WrapperFooter = styled.div`
+    background-color: #024159;
+    width: 1140px;
+    height: 58px;
+    padding-left: 51px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    p{
+        color: #ffffff;
+        padding: 0;
+    }
 `
