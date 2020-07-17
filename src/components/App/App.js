@@ -18,6 +18,10 @@ import {
   WrapperEducation,
   EducationItem,
   EducationTitle,
+  WrapperProjects,
+  ProjectItem,
+  PhotoProject,
+  ProjectContent
 } from '../../style/style';
 
 function App() {
@@ -101,9 +105,9 @@ function App() {
         <EducationItem>
           <div>
             <h2>Engenharia de software</h2>
-            <p>(2018 - 2021)</p>
+            <p>(2018 - 2021) – UNIGRAN</p>
             <p>
-              Cursando Engenharia de Software no Centro Universitário da Grande Dourados
+              Cursando graduação em Engenharia de Software no Centro Universitário da Grande Dourados
             </p>
           </div>
         </EducationItem>
@@ -113,7 +117,7 @@ function App() {
             <h2>Full Stack Development</h2>
             <p>(01/2020 - 07/2020) – Labenu</p>
             <p>
-              Tecnlogias estudadas: SQL, Javascript, HTML, CSS, Git, Amazon Web Services, Node.js, React.js, Github, Typescript, 
+              Tecnlogias estudadas: SQL, Javascript, HTML, CSS, Git, Amazon Web Services, Node.js, React.js, Github, Typescript,
               Unit Testing, Firebase, Jest.
             </p>
           </div>
@@ -128,6 +132,70 @@ function App() {
           </div>
         </EducationItem>
       </WrapperEducation>
+      <WrapperProjects>
+        <ProjectItem>
+          <PhotoProject src={require("../../images/4eddit.png")} />
+          <ProjectContent>
+            <h1>4eddit</h1>
+            <h3>Front-end</h3>
+            <p>
+              O LaBook é uma rede social com o objetivo de promover a conexão e interação entre seus mais diversos usuários. Os usuários podem criar posts de dois tipos ("evento" ou "normal), comentá-los e curti-los também.
+            </p>
+            <p>
+              Para o cadastro nessa rede social, o usuário deve fornecer seu nome, seu e-mail e uma senha. Além disso, esse endpoint já tem que realizar o login do usuário, fornecendo seu token de autenticação no retorno da requisição.
+            </p>
+            <p>
+              Para realizar o login, basta informar seu e-mail e a sua senha. O retorno deve conter o token de autenticação do usuário.
+            </p>
+            <p>
+              Criar uma amizade é simples: basta receber o token de autenticação junto com o Id do usuário com o qual se deseja fazer amizade.
+            </p>
+            <button>Acessar Github</button>
+          </ProjectContent>
+        </ProjectItem>
+        <ProjectItem>
+          <PhotoProject src={require("../../images/labook.png")} />
+          <ProjectContent>
+            <h1>Labook</h1>
+            <h3>Back-end</h3>
+            <p>
+              O LaBook é uma rede social com o objetivo de promover a conexão e interação entre seus mais diversos usuários. Os usuários podem criar posts de dois tipos ("evento" ou "normal), comentá-los e curti-los também.
+            </p>
+            <p>
+              Para o cadastro nessa rede social, o usuário deve fornecer seu nome, seu e-mail e uma senha. Além disso, esse endpoint já tem que realizar o login do usuário, fornecendo seu token de autenticação no retorno da requisição. Para realizar o login, basta informar seu e-mail e a sua senha. O retorno deve conter o token de autenticação do usuário.
+            </p>
+            <p>
+              Criar uma amizade é simples: basta receber o token de autenticação junto com o Id do usuário com o qual se deseja fazer amizade.
+              Encerrar uma amizade segue o mesmo fluxo de fazer: com o token de autenticação e o id do usuário, já é possível realizar esse processo.
+            </p>
+            <p>
+              Para se criar posts o post deve ser criado, passando-se as informações de: foto, descrição, data de criação e tipo ("normal" ou "evento").
+            </p>
+            <p>
+              O feed é composto por todos os posts dos amigos do usuário logado. Os posts são retornados em ordem de criação: do mais recente ao mais antigo.
+              É possivel ver apenas um tipo de post do Feed, esse endpoint recebe um tipo ("normal" ou "evento") e retorna todos os posts que sejam do tipo especificado. Os posts são retornados em ordem de criação: do mais recente ao mais antigo.
+            </p>
+            <button>Acessar Github</button>
+          </ProjectContent>
+        </ProjectItem>
+        <ProjectItem>
+          <PhotoProject src={require("../../images/whats4.png")} />
+          <ProjectContent>
+            <h1>Whats4</h1>
+            <h3>Front-end</h3>
+            <p>
+              Aplicativo que simula troca de mensagens.
+            </p>
+            <p>
+              Lista de mensagem: Cada mensagem possui um remetente (ou seja, um usuário que enviou) e o conteúdo em si.
+</p>
+            <p>
+              Envio de mensagem: Existe um local onde o usuário escolhe o nome do remetente (input) ; o conteúdo da mensagem (input) e um botão de enviar.
+          </p>
+          <button>Acessar Github</button>
+          </ProjectContent>
+        </ProjectItem>
+      </WrapperProjects>
     </Main>
   );
 }
