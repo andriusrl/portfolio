@@ -15,6 +15,9 @@ import {
   TitleSkills,
   SkillsContent,
   SkillItem,
+  WrapperEducation,
+  EducationItem,
+  EducationTitle,
 } from '../../style/style';
 
 function App() {
@@ -85,16 +88,46 @@ function App() {
               Back-end
            </h1>
             <p>
-            Aplicações utilizando NodeJS,
-Typescript e MySQL.
+              Aplicações utilizando NodeJS,
+              Typescript e MySQL.
            </p>
             <p>
-            Criação de API´s para comunicação com front-end seguindo arquitetura MVC.
+              Criação de API´s para comunicação com front-end seguindo arquitetura MVC.
             </p>
           </SkillItem>
         </SkillsContent>
       </WrapperSkills>
-      Portfolio
+      <WrapperEducation>
+        <EducationItem>
+          <div>
+            <h2>Engenharia de software</h2>
+            <p>(2018 - 2021)</p>
+            <p>
+              Cursando Engenharia de Software no Centro Universitário da Grande Dourados
+            </p>
+          </div>
+        </EducationItem>
+        <EducationItem>
+          <EducationTitle>Educação</EducationTitle>
+          <div>
+            <h2>Full Stack Development</h2>
+            <p>(01/2020 - 07/2020) – Labenu</p>
+            <p>
+              Tecnlogias estudadas: SQL, Javascript, HTML, CSS, Git, Amazon Web Services, Node.js, React.js, Github, Typescript, 
+              Unit Testing, Firebase, Jest.
+            </p>
+          </div>
+        </EducationItem>
+        <EducationItem>
+          <div>
+            <h2>Programação com JavaScript</h2>
+            <p>(11/2019) – Digital Innovation One</p>
+            <p>
+              Programação para internet com JavaScript.
+            </p>
+          </div>
+        </EducationItem>
+      </WrapperEducation>
     </Main>
   );
 }
