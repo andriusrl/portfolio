@@ -110,6 +110,7 @@ export const EducationItem = styled.div`
 `
 export const WrapperEducation = styled.div`
     margin-top:12px;
+    margin-bottom:12px;
     width: 1140px;
     display: flex;
     color: #ffffff;
