@@ -21,7 +21,14 @@ import {
   WrapperProjects,
   ProjectItem,
   PhotoProject,
-  ProjectContent
+  ProjectTitle,
+  ProjectContent,
+  WrapperContact,
+  ImageEmail,
+  ContactContent,
+  SocialNetworksContactWrapper,
+  WrapperFooter,
+  SocialNetwrokContactIcon,
 } from '../../style/style';
 
 function App() {
@@ -132,6 +139,7 @@ function App() {
           </div>
         </EducationItem>
       </WrapperEducation>
+      <ProjectTitle>Meus projetos</ProjectTitle>
       <WrapperProjects>
         <ProjectItem>
           <PhotoProject src={require("../../images/4eddit.png")} />
@@ -192,10 +200,30 @@ function App() {
             <p>
               Envio de mensagem: Existe um local onde o usuário escolhe o nome do remetente (input) ; o conteúdo da mensagem (input) e um botão de enviar.
           </p>
-          <button>Acessar Github</button>
+            <button>Acessar Github</button>
           </ProjectContent>
         </ProjectItem>
       </WrapperProjects>
+      <WrapperContact>
+        <ContactContent>
+          <ImageEmail src={require("../../images/email.svg")} />
+          <div>
+            <h1>Contrate-me!</h1>
+            <p>Procuro oportunidade de trabalho onde eu possa aprender, me desenvolver e evoluir na minha carreia profissional.</p>
+            <p>E-mail: andrius.rochalazarino@gmail.com</p>
+            <p>Celular: (67) 992-199-555 (WhatsApp)</p>
+          </div>
+        </ContactContent>
+        <SocialNetworksContactWrapper>
+          <SocialNetwrokContactIcon src={require("../../images/linkedin.svg")} />
+          <SocialNetwrokContactIcon src={require("../../images/whatsapp.svg")} />
+          <SocialNetwrokContactIcon src={require("../../images/github.svg")} />
+          <SocialNetwrokContactIcon src={require("../../images/instagram.svg")} />
+        </SocialNetworksContactWrapper>
+      </WrapperContact>
+      <WrapperFooter>
+        <p>© 2020 Andrius</p>
+      </WrapperFooter>
     </Main>
   );
 }
