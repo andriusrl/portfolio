@@ -269,7 +269,35 @@ export const WrapperFooter = styled.div`
         padding: 0;
     }
 `
+const increasesSizeButton = keyframes`
+    0% {
+        font-size: 16pt;
+    }
+    50% {
+        font-size: 19pt;
+    }
+    100% {
+        font-size: 21pt;
+    }
+`
 export const Button = styled.a`
-    height: 46px;
+    background-color: #ffffff;
+    font-size: 16pt;
     border: 1px solid black;
+    border-radius: 5px;
+    :hover{
+            animation: ${increasesSizeButton} 0.3s 0s both;
+    };
+    :link{
+        text-decoration: none;
+        color: #0A0A0A;
+    };
+    :visited {
+        text-decoration: none;
+        color: #0A0A0A;
+    };
+    a:active {
+        text-decoration: none;
+        color: #0A0A0A;
+    };
 `

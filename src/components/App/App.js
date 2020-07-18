@@ -160,7 +160,7 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
             <p>
               Criar uma amizade é simples: basta receber o token de autenticação junto com o Id do usuário com o qual se deseja fazer amizade.
             </p>
-            <button>Acessar Github</button>
+            <Button href="https://github.com/andriusrl/4eddit" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
         <ProjectItem>
@@ -185,7 +185,7 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
               O feed é composto por todos os posts dos amigos do usuário logado. Os posts são retornados em ordem de criação: do mais recente ao mais antigo.
               É possivel ver apenas um tipo de post do Feed, esse endpoint recebe um tipo ("normal" ou "evento") e retorna todos os posts que sejam do tipo especificado. Os posts são retornados em ordem de criação: do mais recente ao mais antigo.
             </p>
-            <button>Acessar Github</button>
+            <Button href="https://github.com/andriusrl/labook" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
         <ProjectItem>
@@ -202,7 +202,7 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
             <p>
               Envio de mensagem: Existe um local onde o usuário escolhe o nome do remetente (input) ; o conteúdo da mensagem (input) e um botão de enviar.
           </p>
-            <button>Acessar Github</button>
+          <Button href="https://github.com/andriusrl/whats4" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
       </WrapperProjects>
