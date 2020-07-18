@@ -21,7 +21,7 @@ export const TopBioContainer = styled.div`
       @media (max-width: 480px) {
         margin: 0;
         width: 100%;
-        height: 100%;
+        height: 621px;
     };
 `
 export const TopBioContainerLeft = styled.div`
@@ -35,6 +35,8 @@ export const TopBioContainerLeft = styled.div`
     @media (max-width: 480px) {
         margin: 0;
         width: 100%;
+        height: 100%;
+        height: 621px;
     };
 `
 export const ContentBio = styled.div`
@@ -145,6 +147,9 @@ export const PhotoBottom = styled.img`
     position: absolute;
     align-self: flex-end;
     opacity: 0.6;
+    @media (max-width: 480px) {
+        display: none;
+    };
 `
 export const SkillsContent = styled.div`
     margin: 69px 0 0 79px;
