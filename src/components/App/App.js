@@ -87,13 +87,12 @@ function App() {
            </h1>
             <p>
               Desenvolvimento de aplicações
-              web utilizando HTML, CSS e
+              web utilizando React, Redux, Jest, HTML, CSS e
               JavaScript.
            </p>
             <p>
               Criação de sites responsivos
-              seguindo princípio de
-              Mobile First.
+              seguindo princípio Mobile First.
             </p>
           </SkillItem>
           <SkillItem>
@@ -101,8 +100,8 @@ function App() {
               Back-end
            </h1>
             <p>
-              Aplicações utilizando NodeJS,
-              Typescript e MySQL.
+              Aplicações utilizando NodeJS, Express, 
+              Typescript, Jest e MySQL.
            </p>
             <p>
               Criação de API´s para comunicação com front-end seguindo arquitetura MVC.
