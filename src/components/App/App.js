@@ -8,6 +8,7 @@ import {
   ContentBio,
   Photo,
   Menu,
+  Link,
   SocialNetworksWrapper,
   SocialNetwrokIcon,
   WrapperSkills,
@@ -29,12 +30,13 @@ import {
   SocialNetworksContactWrapper,
   WrapperFooter,
   SocialNetwrokContactIcon,
+  Button,
 } from '../../style/style';
 
 function App() {
   return (
     <Main>
-      <WrapperBioContainer>
+      <WrapperBioContainer id="about">
         <TopBioContainerLeft>
           <Title>
             Portfólio
@@ -53,25 +55,25 @@ function App() {
               Apaixonado por programação e tecnologia
           </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut la
-              bore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi u
-              t aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-              dolore eu fugiat nulla pariatur.
+              A princípio gostava de editar código de servidores de jogos online depois passei a tentar fazer pequenos jogos apenas por curiosidade e acabei conhecendo outras linguagens que tive um pequeno contato como C, C++, C#, java, mas foi o desenvolvimento web que mais me chamou atenção pela quantidade tecnologias e pessoas envolvidas.
+              Atualmente estou cursando o 6° semestre de engenharia de software e também finalizando outro curso fullstack de desenvolvimento web onde participei de diversos trabalhos em equipe.
           </p>
             <p>
               JavaScript | React | Node | MySQL | HTML | CSS
            </p>
-            <button>CV em PDF</button>
+            <Button href="curriculo.pdf" target="_blank" >CV em PDF</Button>
           </ContentBio>
         </TopBioContainerLeft>
         <TopBioContainer>
           <Photo src={require("../../images/andrius.png")} />
-          <Menu>quem sou | projetos | contato</Menu>
+          <Menu>
+            <Link href="#about">quem sou</Link> | <Link href="#projects">projetos</Link> | <Link href="#contact">contato</Link>
+          </Menu>
           <SocialNetworksWrapper>
-            <SocialNetwrokIcon src={require("../../images/linkedin.svg")} />
-            <SocialNetwrokIcon src={require("../../images/whatsapp.svg")} />
-            <SocialNetwrokIcon src={require("../../images/github.svg")} />
-            <SocialNetwrokIcon src={require("../../images/instagram.svg")} />
+            <a href="https://www.linkedin.com/in/andrius-lazarino-82768b155/" target="_blank" ><SocialNetwrokIcon src={require("../../images/linkedin.svg")} /></a>
+            <a href="tel:+5567992199555" target="_blank" ><SocialNetwrokIcon src={require("../../images/whatsapp.svg")} /></a>
+            <a href="https://github.com/andriusrl" target="_blank" ><SocialNetwrokIcon src={require("../../images/github.svg")} /></a>
+            <a href="https://www.instagram.com/andriuslaza/" target="_blank" ><SocialNetwrokIcon src={require("../../images/instagram.svg")} /></a>
           </SocialNetworksWrapper>
         </TopBioContainer>
       </WrapperBioContainer>
@@ -85,13 +87,12 @@ function App() {
            </h1>
             <p>
               Desenvolvimento de aplicações
-              web utilizando HTML, CSS e
+              web utilizando React, Redux, Jest, HTML, CSS e
               JavaScript.
            </p>
             <p>
               Criação de sites responsivos
-              seguindo princípio de
-              Mobile First.
+              seguindo princípio Mobile First.
             </p>
           </SkillItem>
           <SkillItem>
@@ -99,8 +100,8 @@ function App() {
               Back-end
            </h1>
             <p>
-              Aplicações utilizando NodeJS,
-              Typescript e MySQL.
+              Aplicações utilizando NodeJS, Express, 
+              Typescript, Jest e MySQL.
            </p>
             <p>
               Criação de API´s para comunicação com front-end seguindo arquitetura MVC.
@@ -139,7 +140,7 @@ function App() {
           </div>
         </EducationItem>
       </WrapperEducation>
-      <ProjectTitle>Meus projetos</ProjectTitle>
+      <ProjectTitle id="projects">Meus projetos</ProjectTitle>
       <WrapperProjects>
         <ProjectItem>
           <PhotoProject src={require("../../images/4eddit.png")} />
@@ -158,7 +159,7 @@ function App() {
             <p>
               Criar uma amizade é simples: basta receber o token de autenticação junto com o Id do usuário com o qual se deseja fazer amizade.
             </p>
-            <button>Acessar Github</button>
+            <Button href="https://github.com/andriusrl/4eddit" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
         <ProjectItem>
@@ -183,7 +184,7 @@ function App() {
               O feed é composto por todos os posts dos amigos do usuário logado. Os posts são retornados em ordem de criação: do mais recente ao mais antigo.
               É possivel ver apenas um tipo de post do Feed, esse endpoint recebe um tipo ("normal" ou "evento") e retorna todos os posts que sejam do tipo especificado. Os posts são retornados em ordem de criação: do mais recente ao mais antigo.
             </p>
-            <button>Acessar Github</button>
+            <Button href="https://github.com/andriusrl/labook" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
         <ProjectItem>
@@ -200,11 +201,11 @@ function App() {
             <p>
               Envio de mensagem: Existe um local onde o usuário escolhe o nome do remetente (input) ; o conteúdo da mensagem (input) e um botão de enviar.
           </p>
-            <button>Acessar Github</button>
+            <Button href="https://github.com/andriusrl/whats4" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
       </WrapperProjects>
-      <WrapperContact>
+      <WrapperContact id="contact">
         <ContactContent>
           <ImageEmail src={require("../../images/email.svg")} />
           <div>
@@ -215,10 +216,18 @@ function App() {
           </div>
         </ContactContent>
         <SocialNetworksContactWrapper>
-          <SocialNetwrokContactIcon src={require("../../images/linkedin.svg")} />
-          <SocialNetwrokContactIcon src={require("../../images/whatsapp.svg")} />
-          <SocialNetwrokContactIcon src={require("../../images/github.svg")} />
-          <SocialNetwrokContactIcon src={require("../../images/instagram.svg")} />
+          <a href="https://www.linkedin.com/in/andrius-lazarino-82768b155/" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/linkedin.svg")} />
+          </a>
+          <a href="tel:+5567992199555" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/whatsapp.svg")} />
+          </a>
+          <a href="https://github.com/andriusrl" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/github.svg")} />
+          </a>
+          <a href="https://www.instagram.com/andriuslaza/" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/instagram.svg")} />
+          </a>
         </SocialNetworksContactWrapper>
       </WrapperContact>
       <WrapperFooter>

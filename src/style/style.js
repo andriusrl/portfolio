@@ -13,7 +13,7 @@ export const TopBioContainer = styled.div`
       height: 621px;
       background-color: #011726;
       display: flex;
-      justify-content: right;
+      justify-content: flex-end;
       margin-left: 6px;
 `
 export const TopBioContainerLeft = styled.div`
@@ -26,22 +26,56 @@ export const TopBioContainerLeft = styled.div`
     margin-right: 6px;
 `
 export const ContentBio = styled.div`
-    width: 369px;
+    width: 371px;
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;
 `
 export const WrapperBioContainer = styled.div`
     display: flex;
-`
 
+`
+const increasesSizeLink = keyframes`
+    0% {
+        font-size: 13pt;
+    }
+    50% {
+        font-size: 16pt;
+    }
+    100% {
+        font-size: 18pt;
+    }
+`
+export const Link = styled.a`
+    text-decoration: none;
+    :hover{
+            animation: ${increasesSizeLink} 0.3s 0s both;
+    };
+    :link{
+        text-decoration: none;
+        color:inherit;
+    };
+    :visited {
+        text-decoration: none;
+        color:inherit;
+    };
+    a:active {
+        text-decoration: none;
+        color:inherit;
+    };
+`
 export const Menu = styled.div`
     position: absolute;
-    margin: 23px 53px 0 0;
+    margin: 23px 0 0 0;
     color: #ffffff;
     z-index: 1;
-
+    padding-right: 53px;
+    ${Link}:nth-child(1){
+        color: #f2b33e;
+    }
+    
 `
+
 export const Title = styled.div`
     margin: 23px auto 0 29px;
     font-weight: bold;
@@ -52,6 +86,17 @@ export const Photo = styled.img`
     height: 621px;
     opacity: 0.6;
 `
+const increasesSize = keyframes`
+    0% {
+        width: 49px;
+    }
+    50% {
+        width: 59px;
+    }
+    100% {
+        width: 69px;
+    }
+`
 export const SocialNetworksWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -61,6 +106,9 @@ export const SocialNetworksWrapper = styled.div`
 export const SocialNetwrokIcon = styled.img`
     margin: 16%;
     width: 39px;
+    :hover{
+            animation: ${increasesSize} 0.3s 0s both;
+        }
 `
 
 export const WrapperSkills = styled.div`
@@ -74,7 +122,7 @@ export const WrapperSkills = styled.div`
 `
 export const PhotoBottom = styled.img`
     position: absolute;
-    align-self: end;
+    align-self: flex-end;
     opacity: 0.6;
 `
 export const SkillsContent = styled.div`
@@ -198,21 +246,13 @@ export const SocialNetworksContactWrapper = styled.div`
     display: flex;
     justify-content: center;
     box-sizing: border-box;
-`
-const increasesSize = keyframes`
-    0% {
-        width: 49px;
-    }
-    50% {
-        width: 59px;
-    }
-    100% {
-        width: 69px;
+    a{
+        margin: 2%;
     }
 `
+
 export const SocialNetwrokContactIcon = styled.img`
     width: 39px;
-    margin: 2%;
         :hover{
             animation: ${increasesSize} 0.3s 0s both;
         }
@@ -230,4 +270,36 @@ export const WrapperFooter = styled.div`
         color: #ffffff;
         padding: 0;
     }
+`
+const increasesSizeButton = keyframes`
+    0% {
+        font-size: 16pt;
+    }
+    50% {
+        font-size: 19pt;
+    }
+    100% {
+        font-size: 21pt;
+    }
+`
+export const Button = styled.a`
+    background-color: #ffffff;
+    font-size: 16pt;
+    border: 1px solid #0A0A0A;
+    border-radius: 5px;
+    :hover{
+            animation: ${increasesSizeButton} 0.3s 0s both;
+    };
+    :link{
+        text-decoration: none;
+        color: #0A0A0A;
+    };
+    :visited {
+        text-decoration: none;
+        color: #0A0A0A;
+    };
+    a:active {
+        text-decoration: none;
+        color: #0A0A0A;
+    };
 `
