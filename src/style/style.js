@@ -35,16 +35,47 @@ export const WrapperBioContainer = styled.div`
     display: flex;
 
 `
-
+const increasesSizeLink = keyframes`
+    0% {
+        font-size: 13pt;
+    }
+    50% {
+        font-size: 16pt;
+    }
+    100% {
+        font-size: 18pt;
+    }
+`
+export const Link = styled.a`
+    text-decoration: none;
+    :hover{
+            animation: ${increasesSizeLink} 0.3s 0s both;
+    };
+    :link{
+        text-decoration: none;
+        color:inherit;
+    };
+    :visited {
+        text-decoration: none;
+        color:inherit;
+    };
+    a:active {
+        text-decoration: none;
+        color:inherit;
+    };
+`
 export const Menu = styled.div`
     position: absolute;
     margin: 23px 0 0 0;
     color: #ffffff;
     z-index: 1;
     padding-right: 53px;
-    /* align-self: flex-end; */
-
+    ${Link}:nth-child(1){
+        color: #f2b33e;
+    }
+    
 `
+
 export const Title = styled.div`
     margin: 23px auto 0 29px;
     font-weight: bold;
@@ -55,6 +86,17 @@ export const Photo = styled.img`
     height: 621px;
     opacity: 0.6;
 `
+const increasesSize = keyframes`
+    0% {
+        width: 49px;
+    }
+    50% {
+        width: 59px;
+    }
+    100% {
+        width: 69px;
+    }
+`
 export const SocialNetworksWrapper = styled.div`
     display: flex;
     flex-direction: column;
@@ -64,6 +106,9 @@ export const SocialNetworksWrapper = styled.div`
 export const SocialNetwrokIcon = styled.img`
     margin: 16%;
     width: 39px;
+    :hover{
+            animation: ${increasesSize} 0.3s 0s both;
+        }
 `
 
 export const WrapperSkills = styled.div`
@@ -202,17 +247,7 @@ export const SocialNetworksContactWrapper = styled.div`
     justify-content: center;
     box-sizing: border-box;
 `
-const increasesSize = keyframes`
-    0% {
-        width: 49px;
-    }
-    50% {
-        width: 59px;
-    }
-    100% {
-        width: 69px;
-    }
-`
+
 export const SocialNetwrokContactIcon = styled.img`
     width: 39px;
     margin: 2%;

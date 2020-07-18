@@ -8,6 +8,7 @@ import {
   ContentBio,
   Photo,
   Menu,
+  Link,
   SocialNetworksWrapper,
   SocialNetwrokIcon,
   WrapperSkills,
@@ -64,7 +65,9 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
         </TopBioContainerLeft>
         <TopBioContainer>
           <Photo src={require("../../images/andrius.png")} />
-          <Menu>quem sou | projetos | contato</Menu>
+          <Menu>
+            <Link href="#projects">quem sou</Link> | <Link href="#projects">projetos</Link> | <Link href="#projects">contato</Link>
+          </Menu>
           <SocialNetworksWrapper>
             <SocialNetwrokIcon src={require("../../images/linkedin.svg")} />
             <SocialNetwrokIcon src={require("../../images/whatsapp.svg")} />
@@ -137,7 +140,7 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
           </div>
         </EducationItem>
       </WrapperEducation>
-      <ProjectTitle>Meus projetos</ProjectTitle>
+      <ProjectTitle id="projects">Meus projetos</ProjectTitle>
       <WrapperProjects>
         <ProjectItem>
           <PhotoProject src={require("../../images/4eddit.png")} />
