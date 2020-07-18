@@ -269,3 +269,7 @@ export const WrapperFooter = styled.div`
         padding: 0;
     }
 `
+export const Button = styled.a`
+    height: 46px;
+    border: 1px solid black;
+`

@@ -30,12 +30,13 @@ import {
   SocialNetworksContactWrapper,
   WrapperFooter,
   SocialNetwrokContactIcon,
+  Button,
 } from '../../style/style';
 
 function App() {
   return (
     <Main>
-      <WrapperBioContainer>
+      <WrapperBioContainer id="about">
         <TopBioContainerLeft>
           <Title>
             Portfólio
@@ -60,13 +61,13 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
             <p>
               JavaScript | React | Node | MySQL | HTML | CSS
            </p>
-            <button>CV em PDF</button>
+            <Button href="curriculo.pdf" >CV em PDF</Button>
           </ContentBio>
         </TopBioContainerLeft>
         <TopBioContainer>
           <Photo src={require("../../images/andrius.png")} />
           <Menu>
-            <Link href="#projects">quem sou</Link> | <Link href="#projects">projetos</Link> | <Link href="#projects">contato</Link>
+            <Link href="#about">quem sou</Link> | <Link href="#projects">projetos</Link> | <Link href="#contact">contato</Link>
           </Menu>
           <SocialNetworksWrapper>
             <SocialNetwrokIcon src={require("../../images/linkedin.svg")} />
@@ -205,7 +206,7 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
           </ProjectContent>
         </ProjectItem>
       </WrapperProjects>
-      <WrapperContact>
+      <WrapperContact id="contact">
         <ContactContent>
           <ImageEmail src={require("../../images/email.svg")} />
           <div>
