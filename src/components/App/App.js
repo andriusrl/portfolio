@@ -55,13 +55,13 @@ function App() {
               Apaixonado por programação e tecnologia
           </h3>
             <p>
-            A princípio gostava de editar código de servidores de jogos online depois passei a tentar fazer pequenos jogos apenas por curiosidade e acabei conhecendo outras linguagens que tive um pequeno contato como C, C++, C#, java, mas foi o desenvolvimento web que mais me chamou atenção pela quantidade tecnologias e pessoas envolvidas.
-Atualmente estou cursando o 6° semestre de engenharia de software e também finalizando outro curso fullstack de desenvolvimento web onde participei de diversos trabalhos em equipe.
+              A princípio gostava de editar código de servidores de jogos online depois passei a tentar fazer pequenos jogos apenas por curiosidade e acabei conhecendo outras linguagens que tive um pequeno contato como C, C++, C#, java, mas foi o desenvolvimento web que mais me chamou atenção pela quantidade tecnologias e pessoas envolvidas.
+              Atualmente estou cursando o 6° semestre de engenharia de software e também finalizando outro curso fullstack de desenvolvimento web onde participei de diversos trabalhos em equipe.
           </p>
             <p>
               JavaScript | React | Node | MySQL | HTML | CSS
            </p>
-            <Button href="curriculo.pdf" >CV em PDF</Button>
+            <Button href="curriculo.pdf" target="_blank" >CV em PDF</Button>
           </ContentBio>
         </TopBioContainerLeft>
         <TopBioContainer>
@@ -70,10 +70,10 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
             <Link href="#about">quem sou</Link> | <Link href="#projects">projetos</Link> | <Link href="#contact">contato</Link>
           </Menu>
           <SocialNetworksWrapper>
-            <SocialNetwrokIcon src={require("../../images/linkedin.svg")} />
-            <SocialNetwrokIcon src={require("../../images/whatsapp.svg")} />
-            <SocialNetwrokIcon src={require("../../images/github.svg")} />
-            <SocialNetwrokIcon src={require("../../images/instagram.svg")} />
+            <a href="https://www.linkedin.com/in/andrius-lazarino-82768b155/" target="_blank" ><SocialNetwrokIcon src={require("../../images/linkedin.svg")} /></a>
+            <a href="tel:+5567992199555" target="_blank" ><SocialNetwrokIcon src={require("../../images/whatsapp.svg")} /></a>
+            <a href="https://github.com/andriusrl" target="_blank" ><SocialNetwrokIcon src={require("../../images/github.svg")} /></a>
+            <a href="https://www.instagram.com/andriuslaza/" target="_blank" ><SocialNetwrokIcon src={require("../../images/instagram.svg")} /></a>
           </SocialNetworksWrapper>
         </TopBioContainer>
       </WrapperBioContainer>
@@ -202,7 +202,7 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
             <p>
               Envio de mensagem: Existe um local onde o usuário escolhe o nome do remetente (input) ; o conteúdo da mensagem (input) e um botão de enviar.
           </p>
-          <Button href="https://github.com/andriusrl/whats4" target="_blank" >Acessar github</Button>
+            <Button href="https://github.com/andriusrl/whats4" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
       </WrapperProjects>
@@ -217,10 +217,18 @@ Atualmente estou cursando o 6° semestre de engenharia de software e também fin
           </div>
         </ContactContent>
         <SocialNetworksContactWrapper>
-          <SocialNetwrokContactIcon src={require("../../images/linkedin.svg")} />
-          <SocialNetwrokContactIcon src={require("../../images/whatsapp.svg")} />
-          <SocialNetwrokContactIcon src={require("../../images/github.svg")} />
-          <SocialNetwrokContactIcon src={require("../../images/instagram.svg")} />
+          <a href="https://www.linkedin.com/in/andrius-lazarino-82768b155/" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/linkedin.svg")} />
+          </a>
+          <a href="tel:+5567992199555" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/whatsapp.svg")} />
+          </a>
+          <a href="https://github.com/andriusrl" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/github.svg")} />
+          </a>
+          <a href="https://www.instagram.com/andriuslaza/" target="_blank" >
+            <SocialNetwrokContactIcon src={require("../../images/instagram.svg")} />
+          </a>
         </SocialNetworksContactWrapper>
       </WrapperContact>
       <WrapperFooter>

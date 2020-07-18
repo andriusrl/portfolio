@@ -246,11 +246,13 @@ export const SocialNetworksContactWrapper = styled.div`
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    a{
+        margin: 2%;
+    }
 `
 
 export const SocialNetwrokContactIcon = styled.img`
     width: 39px;
-    margin: 2%;
         :hover{
             animation: ${increasesSize} 0.3s 0s both;
         }
