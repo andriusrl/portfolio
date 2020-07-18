@@ -7,6 +7,9 @@ export const Main = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 12px;
+    @media (max-width: 480px) {
+        padding-top: 0;
+    };
 `
 export const TopBioContainer = styled.div`
       width: 564px;
@@ -15,6 +18,11 @@ export const TopBioContainer = styled.div`
       display: flex;
       justify-content: flex-end;
       margin-left: 6px;
+      @media (max-width: 480px) {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    };
 `
 export const TopBioContainerLeft = styled.div`
     width: 564px;
@@ -24,6 +32,10 @@ export const TopBioContainerLeft = styled.div`
     flex-direction: column;
     color: #ffffff;
     margin-right: 6px;
+    @media (max-width: 480px) {
+        margin: 0;
+        width: 100%;
+    };
 `
 export const ContentBio = styled.div`
     width: 371px;
@@ -33,7 +45,10 @@ export const ContentBio = styled.div`
 `
 export const WrapperBioContainer = styled.div`
     display: flex;
-
+    @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+    };
 `
 const increasesSizeLink = keyframes`
     0% {
@@ -44,7 +59,7 @@ const increasesSizeLink = keyframes`
     }
     100% {
         font-size: 18pt;
-    }
+    };
 `
 export const Link = styled.a`
     text-decoration: none;
@@ -72,7 +87,7 @@ export const Menu = styled.div`
     padding-right: 53px;
     ${Link}:nth-child(1){
         color: #f2b33e;
-    }
+    };
     
 `
 
@@ -85,17 +100,20 @@ export const Photo = styled.img`
     width: 564px;
     height: 621px;
     opacity: 0.6;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 const increasesSize = keyframes`
     0% {
         width: 49px;
-    }
+    };
     50% {
         width: 59px;
-    }
+    };
     100% {
         width: 69px;
-    }
+    };
 `
 export const SocialNetworksWrapper = styled.div`
     display: flex;
@@ -108,7 +126,7 @@ export const SocialNetwrokIcon = styled.img`
     width: 39px;
     :hover{
             animation: ${increasesSize} 0.3s 0s both;
-        }
+        };
 `
 
 export const WrapperSkills = styled.div`
@@ -119,6 +137,9 @@ export const WrapperSkills = styled.div`
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const PhotoBottom = styled.img`
     position: absolute;
@@ -128,6 +149,9 @@ export const PhotoBottom = styled.img`
 export const SkillsContent = styled.div`
     margin: 69px 0 0 79px;
     display: flex;
+    @media (max-width: 480px) {
+        flex-direction: column;
+    };
 `
 export const TitleSkills = styled.h1`
     margin: 79px 0 0 79px;
@@ -138,7 +162,7 @@ export const SkillItem = styled.div`
     p{
         text-align: justify;
         padding: 0 9% 0 9%;
-    }
+    };
 `
 export const EducationItem = styled.div`
     width: 364px;
@@ -154,7 +178,12 @@ export const EducationItem = styled.div`
     };
     p:nth-child(3){
         text-align: justify;
-    }
+    };
+    @media (max-width: 480px) {
+        margin: 0 !important;
+        align-self: center;
+        width: 96%;
+    };
 `
 export const WrapperEducation = styled.div`
     margin-top:12px;
@@ -165,16 +194,20 @@ export const WrapperEducation = styled.div`
     ${EducationItem}:nth-child(1){
         background-color: #024159;
         margin-left: 12px;
-    }
+    };
     ${EducationItem}:nth-child(2){
         background-color: #025e73;
         margin-left: 12px;
         margin-right: 12px;
-    }
+    };
     ${EducationItem}:nth-child(3){
         background-color: #82d0d9;
         margin-right: 12px;
-    }
+    };
+    @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+    };
 `
 export const EducationTitle = styled.h1`
         position: absolute;
@@ -186,6 +219,9 @@ export const ProjectItem = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: 480px) {
+        flex-direction: column;
+    };
 `
 export const WrapperProjects = styled.div`
     width: 1140px;
@@ -198,18 +234,27 @@ export const WrapperProjects = styled.div`
     ${ProjectItem}:nth-child(3){
         background-color: #025e73;
     };
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const PhotoProject = styled.img`
     width: 499px;
     height: 303px;
     margin-top: auto;
     margin-bottom: auto;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const ProjectContent = styled.div`
     width: 420px;
     color: #ffffff;
     margin-top: 3%;
     margin-bottom: 3%;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const ProjectTitle = styled.h2`
     color: #00436c;
@@ -223,6 +268,9 @@ export const WrapperContact = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const ImageEmail = styled.img`
     width: 193px;
@@ -230,6 +278,10 @@ export const ImageEmail = styled.img`
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 66px;
+    @media (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+    };
 `
 export const ContactContent = styled.div`
     margin-top: 2%;
@@ -239,6 +291,14 @@ export const ContactContent = styled.div`
     div{
         width: 430px;
         text-align: justify;
+        @media (max-width: 480px) {
+            width: 100%;
+            flex-direction: column;
+        };
+    };
+    @media (max-width: 480px) {
+        width: 100%;
+        flex-direction: column;
     };
 `
 export const SocialNetworksContactWrapper = styled.div`
@@ -248,14 +308,14 @@ export const SocialNetworksContactWrapper = styled.div`
     box-sizing: border-box;
     a{
         margin: 2%;
-    }
+    };
 `
 
 export const SocialNetwrokContactIcon = styled.img`
     width: 39px;
         :hover{
             animation: ${increasesSize} 0.3s 0s both;
-        }
+        };
         
 `
 export const WrapperFooter = styled.div`
@@ -269,7 +329,11 @@ export const WrapperFooter = styled.div`
     p{
         color: #ffffff;
         padding: 0;
+    };
+    @media (max-width: 480px) {
+        width: 100%;
     }
+
 `
 const increasesSizeButton = keyframes`
     0% {
