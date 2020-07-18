@@ -356,6 +356,7 @@ export const Button = styled.a`
     font-size: 16pt;
     border: 1px solid #0A0A0A;
     border-radius: 5px;
+    padding: 3px;
     :hover{
             animation: ${increasesSizeButton} 0.3s 0s both;
     };
