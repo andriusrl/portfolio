@@ -206,7 +206,7 @@ export const WrapperEducation = styled.div`
         margin-right: 12px;
     };
     ${EducationItem}:nth-child(3){
-        background-color: #82d0d9;
+        background-color: #1b818c;
         margin-right: 12px;
     };
     @media (max-width: 480px) {
