@@ -39,6 +39,7 @@ export const TopBioContainerLeft = styled.div`
         /* height: 621px;  */ /* Isso Corrigia as Skills que cobria a bio mas foi corrigido colocando border-box e arrumando width do CotentBio */
         padding-left: 3%;
         padding-right: 3%;
+        padding-bottom: 3%;
         box-sizing: border-box;
     };
 `
@@ -105,6 +106,11 @@ export const Menu = styled.div`
 export const Title = styled.div`
     margin: 23px auto 0 29px;
     font-weight: bold;
+    @media (max-width: 480px) {
+        width: 100%;
+        margin: 3% 0 0 0;
+        text-align: end;
+    };
 `
 export const Photo = styled.img`
     position: absolute;
