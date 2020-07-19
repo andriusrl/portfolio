@@ -73,6 +73,9 @@ export const Link = styled.a`
     text-decoration: none;
     :hover{
             animation: ${increasesSizeLink} 0.3s 0s both;
+            @media (max-width: 480px) {
+                animation: none;
+            };
     };
     :link{
         text-decoration: none;
@@ -140,6 +143,9 @@ export const SocialNetwrokIcon = styled.img`
     width: 39px;
     :hover{
             animation: ${increasesSize} 0.3s 0s both;
+            @media (max-width: 480px) {
+                animation: none;
+            };
         };
 `
 
@@ -332,6 +338,9 @@ export const SocialNetwrokContactIcon = styled.img`
     width: 39px;
         :hover{
             animation: ${increasesSize} 0.3s 0s both;
+            @media (max-width: 480px) {
+                animation: none;
+            };
         };
         
 `
@@ -371,6 +380,9 @@ export const Button = styled.a`
     padding: 3px;
     :hover{
             animation: ${increasesSizeButton} 0.3s 0s both;
+            @media (max-width: 480px) {
+                animation: none;
+            };
     };
     :link{
         text-decoration: none;
