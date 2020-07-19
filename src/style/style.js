@@ -7,6 +7,10 @@ export const Main = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 12px;
+    @media (max-width: 480px) {
+        padding-top: 0;
+        box-sizing: border-box;
+    };
 `
 export const TopBioContainer = styled.div`
       width: 564px;
@@ -15,6 +19,11 @@ export const TopBioContainer = styled.div`
       display: flex;
       justify-content: flex-end;
       margin-left: 6px;
+      @media (max-width: 480px) {
+        margin: 0;
+        width: 100%;
+        height: fit-content;
+    };
 `
 export const TopBioContainerLeft = styled.div`
     width: 564px;
@@ -24,16 +33,32 @@ export const TopBioContainerLeft = styled.div`
     flex-direction: column;
     color: #ffffff;
     margin-right: 6px;
+    @media (max-width: 480px) {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        /* height: 621px;  */ /* Isso Corrigia as Skills que cobria a bio mas foi corrigido colocando border-box e arrumando width do CotentBio */
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-bottom: 3%;
+        box-sizing: border-box;
+    };
 `
 export const ContentBio = styled.div`
     width: 371px;
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const WrapperBioContainer = styled.div`
     display: flex;
-
+    @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+    };
 `
 const increasesSizeLink = keyframes`
     0% {
@@ -44,12 +69,15 @@ const increasesSizeLink = keyframes`
     }
     100% {
         font-size: 18pt;
-    }
+    };
 `
 export const Link = styled.a`
     text-decoration: none;
     :hover{
             animation: ${increasesSizeLink} 0.3s 0s both;
+            @media (max-width: 480px) {
+                animation: none;
+            };
     };
     :link{
         text-decoration: none;
@@ -72,43 +100,67 @@ export const Menu = styled.div`
     padding-right: 53px;
     ${Link}:nth-child(1){
         color: #f2b33e;
-    }
-    
+    };
+    @media (max-width: 480px) {
+        font-size: 21px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        text-align: center;
+        /* padding: 0 auto 0 auto; */
+    };   
 `
 
 export const Title = styled.div`
     margin: 23px auto 0 29px;
     font-weight: bold;
+    @media (max-width: 480px) {
+        width: 100%;
+        margin: 3% 0 0 0;
+        text-align: end;
+    };
 `
 export const Photo = styled.img`
     position: absolute;
     width: 564px;
     height: 621px;
     opacity: 0.6;
+    @media (max-width: 480px) {
+        position: relative;
+        width: 100%;
+        height: fit-content;
+    };
 `
 const increasesSize = keyframes`
     0% {
         width: 49px;
-    }
+    };
     50% {
         width: 59px;
-    }
+    };
     100% {
         width: 69px;
-    }
+    };
 `
 export const SocialNetworksWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: auto 53px auto 0;
     z-index: 1;
+    @media (max-width: 480px) {
+        position: absolute;
+        margin-top: 25%;
+    };
 `
 export const SocialNetwrokIcon = styled.img`
     margin: 16%;
     width: 39px;
     :hover{
             animation: ${increasesSize} 0.3s 0s both;
-        }
+            @media (max-width: 480px) {
+                animation: none;
+            };
+        };
 `
 
 export const WrapperSkills = styled.div`
@@ -119,26 +171,39 @@ export const WrapperSkills = styled.div`
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const PhotoBottom = styled.img`
     position: absolute;
     align-self: flex-end;
     opacity: 0.6;
+    @media (max-width: 480px) {
+        display: none;
+    };
 `
 export const SkillsContent = styled.div`
     margin: 69px 0 0 79px;
     display: flex;
+    @media (max-width: 480px) {
+        flex-direction: column;
+        margin: 6% auto 0 auto;
+    };
 `
 export const TitleSkills = styled.h1`
     margin: 79px 0 0 79px;
     font-weight: bold;
+    @media (max-width: 480px) {
+        margin: 6% auto 0 auto;
+    };
 `
 export const SkillItem = styled.div`
     text-align: center;
     p{
         text-align: justify;
         padding: 0 9% 0 9%;
-    }
+    };
 `
 export const EducationItem = styled.div`
     width: 364px;
@@ -154,7 +219,17 @@ export const EducationItem = styled.div`
     };
     p:nth-child(3){
         text-align: justify;
+    };
+    h1{
+        @media (max-width: 480px) {
+            width: 96%;    
+        };
     }
+    @media (max-width: 480px) {
+        margin: 0 auto 0 auto !important;
+        align-self: center;
+        width: 96%;
+    };
 `
 export const WrapperEducation = styled.div`
     margin-top:12px;
@@ -165,27 +240,38 @@ export const WrapperEducation = styled.div`
     ${EducationItem}:nth-child(1){
         background-color: #024159;
         margin-left: 12px;
-    }
+    };
     ${EducationItem}:nth-child(2){
         background-color: #025e73;
         margin-left: 12px;
         margin-right: 12px;
-    }
+    };
     ${EducationItem}:nth-child(3){
-        background-color: #82d0d9;
+        background-color: #1b818c;
         margin-right: 12px;
-    }
+    };
+    @media (max-width: 480px) {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    };
 `
 export const EducationTitle = styled.h1`
         position: absolute;
         width: 364px;
         margin-top: 19px !important;
         align-self: flex-start;
+        @media (max-width: 480px) {
+             width: 100%;
+        };
 `
 export const ProjectItem = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: 480px) {
+        flex-direction: column;
+    };
 `
 export const WrapperProjects = styled.div`
     width: 1140px;
@@ -198,18 +284,29 @@ export const WrapperProjects = styled.div`
     ${ProjectItem}:nth-child(3){
         background-color: #025e73;
     };
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const PhotoProject = styled.img`
     width: 499px;
     height: 303px;
     margin-top: auto;
     margin-bottom: auto;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const ProjectContent = styled.div`
     width: 420px;
     color: #ffffff;
     margin-top: 3%;
     margin-bottom: 3%;
+    box-sizing: border-box;
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: 0 3% 0 3%;
+    };
 `
 export const ProjectTitle = styled.h2`
     color: #00436c;
@@ -223,6 +320,9 @@ export const WrapperContact = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const ImageEmail = styled.img`
     width: 193px;
@@ -230,6 +330,12 @@ export const ImageEmail = styled.img`
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 66px;
+    @media (max-width: 480px) {
+        margin-left: auto;
+        margin-right: auto;
+        width: 42%;
+        height: 42%;
+    };
 `
 export const ContactContent = styled.div`
     margin-top: 2%;
@@ -239,6 +345,21 @@ export const ContactContent = styled.div`
     div{
         width: 430px;
         text-align: justify;
+        @media (max-width: 480px) {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 3% 0 3%;
+            flex-direction: column;
+        };
+        h1{
+            @media (max-width: 480px) {
+                text-align: center;
+            };
+        }
+    };
+    @media (max-width: 480px) {
+        width: 100%;
+        flex-direction: column;
     };
 `
 export const SocialNetworksContactWrapper = styled.div`
@@ -248,14 +369,17 @@ export const SocialNetworksContactWrapper = styled.div`
     box-sizing: border-box;
     a{
         margin: 2%;
-    }
+    };
 `
 
 export const SocialNetwrokContactIcon = styled.img`
     width: 39px;
         :hover{
             animation: ${increasesSize} 0.3s 0s both;
-        }
+            @media (max-width: 480px) {
+                animation: none;
+            };
+        };
         
 `
 export const WrapperFooter = styled.div`
@@ -269,7 +393,16 @@ export const WrapperFooter = styled.div`
     p{
         color: #ffffff;
         padding: 0;
-    }
+        @media (max-width: 480px) {
+            width: 100%;
+            text-align: center;
+        };
+    };
+    @media (max-width: 480px) {
+        width: 100%;
+        padding: 0 ;
+    };
+
 `
 const increasesSizeButton = keyframes`
     0% {
@@ -287,8 +420,12 @@ export const Button = styled.a`
     font-size: 16pt;
     border: 1px solid #0A0A0A;
     border-radius: 5px;
+    padding: 3px;
     :hover{
             animation: ${increasesSizeButton} 0.3s 0s both;
+            @media (max-width: 480px) {
+                animation: none;
+            };
     };
     :link{
         text-decoration: none;
