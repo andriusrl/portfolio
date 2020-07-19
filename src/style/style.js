@@ -180,11 +180,15 @@ export const SkillsContent = styled.div`
     display: flex;
     @media (max-width: 480px) {
         flex-direction: column;
+        margin: 6% auto 0 auto;
     };
 `
 export const TitleSkills = styled.h1`
     margin: 79px 0 0 79px;
     font-weight: bold;
+    @media (max-width: 480px) {
+        margin: 6% auto 0 auto;
+    };
 `
 export const SkillItem = styled.div`
     text-align: center;
