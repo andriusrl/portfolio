@@ -9,6 +9,7 @@ export const Main = styled.div`
     padding-top: 12px;
     @media (max-width: 480px) {
         padding-top: 0;
+        box-sizing: border-box;
     };
 `
 export const TopBioContainer = styled.div`
@@ -219,8 +220,13 @@ export const EducationItem = styled.div`
     p:nth-child(3){
         text-align: justify;
     };
+    h1{
+        @media (max-width: 480px) {
+            width: 96%;    
+        };
+    }
     @media (max-width: 480px) {
-        margin: 0 !important;
+        margin: 0 auto 0 auto !important;
         align-self: center;
         width: 96%;
     };
@@ -247,6 +253,7 @@ export const WrapperEducation = styled.div`
     @media (max-width: 480px) {
         flex-direction: column;
         width: 100%;
+        margin: 0;
     };
 `
 export const EducationTitle = styled.h1`
@@ -254,6 +261,9 @@ export const EducationTitle = styled.h1`
         width: 364px;
         margin-top: 19px !important;
         align-self: flex-start;
+        @media (max-width: 480px) {
+             width: 100%;
+        };
 `
 export const ProjectItem = styled.div`
     width: 100%;
