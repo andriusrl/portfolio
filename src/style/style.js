@@ -100,7 +100,14 @@ export const Menu = styled.div`
     ${Link}:nth-child(1){
         color: #f2b33e;
     };
-    
+    @media (max-width: 480px) {
+        font-size: 21px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        text-align: center;
+        /* padding: 0 auto 0 auto; */
+    };   
 `
 
 export const Title = styled.div`
@@ -285,8 +292,10 @@ export const ProjectContent = styled.div`
     color: #ffffff;
     margin-top: 3%;
     margin-bottom: 3%;
+    box-sizing: border-box;
     @media (max-width: 480px) {
         width: 100%;
+        padding: 0 3% 0 3%;
     };
 `
 export const ProjectTitle = styled.h2`
@@ -314,6 +323,8 @@ export const ImageEmail = styled.img`
     @media (max-width: 480px) {
         margin-left: auto;
         margin-right: auto;
+        width: 42%;
+        height: 42%;
     };
 `
 export const ContactContent = styled.div`
@@ -326,8 +337,15 @@ export const ContactContent = styled.div`
         text-align: justify;
         @media (max-width: 480px) {
             width: 100%;
+            box-sizing: border-box;
+            padding: 0 3% 0 3%;
             flex-direction: column;
         };
+        h1{
+            @media (max-width: 480px) {
+                text-align: center;
+            };
+        }
     };
     @media (max-width: 480px) {
         width: 100%;
@@ -365,10 +383,15 @@ export const WrapperFooter = styled.div`
     p{
         color: #ffffff;
         padding: 0;
+        @media (max-width: 480px) {
+            width: 100%;
+            text-align: center;
+        };
     };
     @media (max-width: 480px) {
         width: 100%;
-    }
+        padding: 0 ;
+    };
 
 `
 const increasesSizeButton = keyframes`
