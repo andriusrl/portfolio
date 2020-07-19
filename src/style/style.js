@@ -21,7 +21,7 @@ export const TopBioContainer = styled.div`
       @media (max-width: 480px) {
         margin: 0;
         width: 100%;
-        height: 621px;
+        height: fit-content;
     };
 `
 export const TopBioContainerLeft = styled.div`
@@ -109,7 +109,9 @@ export const Photo = styled.img`
     height: 621px;
     opacity: 0.6;
     @media (max-width: 480px) {
+        position: relative;
         width: 100%;
+        height: fit-content;
     };
 `
 const increasesSize = keyframes`
@@ -128,6 +130,10 @@ export const SocialNetworksWrapper = styled.div`
     flex-direction: column;
     margin: auto 53px auto 0;
     z-index: 1;
+    @media (max-width: 480px) {
+        position: absolute;
+        margin-top: 25%;
+    };
 `
 export const SocialNetwrokIcon = styled.img`
     margin: 16%;

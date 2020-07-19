@@ -65,7 +65,6 @@ function App() {
           </ContentBio>
         </TopBioContainerLeft>
         <TopBioContainer>
-          <Photo src={require("../../images/andrius.png")} />
           <Menu>
             <Link href="#about">quem sou</Link> | <Link href="#projects">projetos</Link> | <Link href="#contact">contato</Link>
           </Menu>
@@ -75,6 +74,7 @@ function App() {
             <a href="https://github.com/andriusrl" target="_blank" ><SocialNetwrokIcon src={require("../../images/github.svg")} /></a>
             <a href="https://www.instagram.com/andriuslaza/" target="_blank" ><SocialNetwrokIcon src={require("../../images/instagram.svg")} /></a>
           </SocialNetworksWrapper>
+          <Photo src={require("../../images/andrius.png")} />
         </TopBioContainer>
       </WrapperBioContainer>
       <WrapperSkills>
