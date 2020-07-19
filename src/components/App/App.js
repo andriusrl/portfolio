@@ -100,7 +100,7 @@ function App() {
               Back-end
            </h1>
             <p>
-              Aplicações utilizando NodeJS, Express, 
+              Aplicações utilizando NodeJS, Express,
               Typescript, Jest e MySQL.
            </p>
             <p>

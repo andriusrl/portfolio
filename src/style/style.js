@@ -36,7 +36,10 @@ export const TopBioContainerLeft = styled.div`
         margin: 0;
         width: 100%;
         height: 100%;
-        height: 621px;
+        /* height: 621px;  */ /* Isso Corrigia as Skills que cobria a bio mas foi corrigido colocando border-box e arrumando width do CotentBio */
+        padding-left: 3%;
+        padding-right: 3%;
+        box-sizing: border-box;
     };
 `
 export const ContentBio = styled.div`
@@ -44,6 +47,9 @@ export const ContentBio = styled.div`
     align-self: center;
     margin-top: auto;
     margin-bottom: auto;
+    @media (max-width: 480px) {
+        width: 100%;
+    };
 `
 export const WrapperBioContainer = styled.div`
     display: flex;
