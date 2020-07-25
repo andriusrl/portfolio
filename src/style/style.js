@@ -184,7 +184,7 @@ export const PhotoBottom = styled.img`
     };
 `
 export const SkillsContent = styled.div`
-    margin: 69px 0 0 79px;
+    margin: 69px auto 0 auto;
     display: flex;
     @media (max-width: 480px) {
         flex-direction: column;
