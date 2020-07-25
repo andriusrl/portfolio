@@ -212,11 +212,13 @@ export const EducationItem = styled.div`
     display: flex;
     align-items: center;
     div{
-        margin-top: 33px;
         padding-left:9%;
         padding-right:9%;
 
     };
+    div:nth-child(2){
+        margin-top: 33px;
+    }
     p:nth-child(3){
         text-align: justify;
     };
