@@ -23,6 +23,7 @@ export const TopBioContainer = styled.div`
         margin: 0;
         width: 100%;
         height: fit-content;
+        box-sizing: border-box;
     };
 `
 export const TopBioContainerLeft = styled.div`
@@ -153,7 +154,7 @@ export const SocialNetworksWrapper = styled.div`
     };
 `
 export const SocialNetwrokIcon = styled.img`
-    margin: 16%;
+    margin: 16%; /* malvado */
     width: 39px;
     :hover{
             animation: ${increasesSize} 0.3s 0s both;
