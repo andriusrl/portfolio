@@ -182,8 +182,10 @@ export const WrapperSkills = styled.div`
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    animation: ${SlideRight} 3s 0s both;
     @media (max-width: 480px) {
         width: 100%;
+        animation: none;
     };
 `
 export const PhotoBottom = styled.img`
