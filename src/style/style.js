@@ -26,6 +26,14 @@ export const TopBioContainer = styled.div`
         box-sizing: border-box;
     };
 `
+const SlideRight = keyframes`
+    0% {
+        margin-right: 1536px;
+    }
+    100% {
+        margin-right: 6px;
+    };
+`
 export const TopBioContainerLeft = styled.div`
     width: 564px;
     height: 621px;
@@ -33,7 +41,8 @@ export const TopBioContainerLeft = styled.div`
     display: flex;
     flex-direction: column;
     color: #ffffff;
-    margin-right: 6px;
+    /* margin-right: 6px; */
+    animation: ${SlideRight} 3s 0s both;
     @media (max-width: 480px) {
         margin: 0;
         width: 100%;
@@ -43,6 +52,7 @@ export const TopBioContainerLeft = styled.div`
         padding-right: 3%;
         padding-bottom: 3%;
         box-sizing: border-box;
+        animation: none;
     };
 `
 export const ContentBio = styled.div`
@@ -172,8 +182,10 @@ export const WrapperSkills = styled.div`
     color: #ffffff;
     display: flex;
     flex-direction: column;
+    animation: ${SlideRight} 3s 0s both;
     @media (max-width: 480px) {
         width: 100%;
+        animation: none;
     };
 `
 export const PhotoBottom = styled.img`
@@ -183,6 +195,12 @@ export const PhotoBottom = styled.img`
     @media (max-width: 480px) {
         display: none;
     };
+`
+export const WrapperTechs = styled.div`
+    position: absolute;
+    @media (max-width: 480px) {
+        display: none;
+    }
 `
 export const SkillsContent = styled.div`
     margin: 69px auto 0 auto;
@@ -240,6 +258,7 @@ export const WrapperEducation = styled.div`
     width: 1140px;
     display: flex;
     color: #ffffff;
+    box-sizing: border-box;
     ${EducationItem}:nth-child(1){
         background-color: #024159;
         margin-left: 12px;

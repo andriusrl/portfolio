@@ -13,6 +13,7 @@ import {
   SocialNetwrokIcon,
   WrapperSkills,
   PhotoBottom,
+  WrapperTechs,
   TitleSkills,
   SkillsContent,
   SkillItem,
@@ -78,6 +79,7 @@ function App() {
         </TopBioContainer>
       </WrapperBioContainer>
       <WrapperSkills>
+        <WrapperTechs></WrapperTechs>
         <PhotoBottom src={require("../../images/andrius_bottom.png")} />
         <TitleSkills>Meus conhecimentos</TitleSkills>
         <SkillsContent>
