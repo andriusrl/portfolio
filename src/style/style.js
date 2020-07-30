@@ -173,7 +173,14 @@ export const SocialNetwrokIcon = styled.img`
             };
         };
 `
-
+const SlideRightSkills = keyframes`
+    0% {
+        margin-right: 1536px;
+    }
+    100% {
+        margin-right: 0;
+    };
+`
 export const WrapperSkills = styled.div`
     width: 1140px;
     background-color: #1b818c;
@@ -182,7 +189,7 @@ export const WrapperSkills = styled.div`
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    animation: ${SlideRight} 3s 0s both;
+    animation: ${SlideRightSkills} 3s 0s both;
     @media (max-width: 480px) {
         width: 100%;
         animation: none;
