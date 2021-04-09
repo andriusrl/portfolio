@@ -160,7 +160,7 @@ function App() {
             <p>
               Deleta um a um.
             </p>
-            <Button href="https://github.com/andriusrl/4eddit" target="_blank" >Acessar github</Button>
+            <Button href="https://github.com/andriusrl/star-wars" target="_blank" >Acessar github</Button>
           </ProjectContent>
         </ProjectItem>
 
