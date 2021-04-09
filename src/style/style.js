@@ -313,6 +313,9 @@ export const WrapperProjects = styled.div`
     ${ProjectItem}:nth-child(3){
         background-color: #025e73;
     };
+    ${ProjectItem}:nth-child(4){
+        background-color: #011726;
+    };
     @media (max-width: 480px) {
         width: 100%;
     };

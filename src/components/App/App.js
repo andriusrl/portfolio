@@ -144,6 +144,27 @@ function App() {
       </WrapperEducation>
       <ProjectTitle id="projects">Meus projetos</ProjectTitle>
       <WrapperProjects>
+
+
+        <ProjectItem>
+          <PhotoProject src={require("../../images/starwars.png")} />
+          <ProjectContent>
+            <h1>Personagens Star Wars</h1>
+            <h3>Front-end</h3>
+            <p>
+              Lista 10 personagens do Star Wars em uma página.
+            </p>
+            <p>
+              Ordena em ordem alfabética .
+            </p>
+            <p>
+              Deleta um a um.
+            </p>
+            <Button href="https://github.com/andriusrl/4eddit" target="_blank" >Acessar github</Button>
+          </ProjectContent>
+        </ProjectItem>
+
+
         <ProjectItem>
           <PhotoProject src={require("../../images/4eddit.png")} />
           <ProjectContent>
